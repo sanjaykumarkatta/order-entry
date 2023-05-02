@@ -6,15 +6,15 @@ const useOrderEntry = () => {
   const [orderCount, setOrderCount] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
   const [submitEnabled, setSubmitEnabled] = useState(false);
-  const [action, setAction] = useState('Buy');
-  const [symbol, setSymbol] = useState(null);
+  const [action, setAction] = useState<any>('Buy');
+  const [symbol, setSymbol] = useState<any>(null);
   const [filteredSymbols, setFilteredSymbols] = useState<any>(null);
   const [qty, setQty] = useState<number>(0);
   const [price, setPrice] = useState<number>(0);
   const [stopPrice, setStopPrice] = useState<number>(0);
   const [comment, setComment] = useState<string>('');
-  const [orderType, setOrderType] = useState('Market');
-  const [TIFType, setTIFType] = useState('DAY');
+  const [orderType, setOrderType] = useState<any>('Market');
+  const [TIFType, setTIFType] = useState<any>('DAY');
 
   const actionValues = ['Buy', 'Sell'];
   const symbolSuggestions = ['AAPL', 'MSFT', 'GOOGL', 'VZ', 'MMM', 'NFLX', 'FB', 'TWTR', 'AMZN', 'EBAY'];

@@ -30,7 +30,7 @@ const OrderBlotter = () => {
         { field: 'comment', tooltipValueGetter:(params) => params.value}
     ],[])
 
-    const onFirstDataRendered = useCallback((params: FirstDataRenderedEvent) => {
+    const onFirstDataRendered = useCallback(() => {
         gridRef.current!.api.sizeColumnsToFit();
       }, []);
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import App from './App'
 import { Provider } from 'react-redux';
 import './index.css'
 import "primereact/resources/themes/lara-light-indigo/theme.css";
